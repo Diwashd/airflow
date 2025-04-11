@@ -1,14 +1,12 @@
----
+### 📘 **Intro to Airflow**
 
-### 📘 **Intro to Airflow** 
-
-| **Main Topic**           | **Subtopics**                                                                                 | **Key Concepts**                                                                                                                                     |
-|--------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| What is Airflow?         | Workflow orchestration, DAGs, Tasks                                                           | Directed Acyclic Graph (DAG), Tasks, Dependencies                                                                                                   |
-| DAG Basics               | DAG definition, arguments                                                                     | `dag_id`, `start_date`, `schedule_interval`, `default_args`, `retries`, `retry_delay`                                                               |
-| Operators                | PythonOperator, BashOperator                                                                  | Used to define task behavior via `python_callable` or `bash_command`                                                                                |
-| Task Dependencies        | Setting task order                                                                            | Using bitshift operators (`>>`, `<<`) to link tasks                                                                                                 |
-| DAG Execution            | Manual testing                                                                                 | `airflow tasks test <dag_id> <task_id> <execution_date>`                                                                                             |
+| **Main Topic**    | **Subtopics**                       | **Key Concepts**                                                                      |
+| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
+| What is Airflow?  | Workflow orchestration, DAGs, Tasks | Directed Acyclic Graph (DAG), Tasks, Dependencies                                     |
+| DAG Basics        | DAG definition, arguments           | `dag_id`, `start_date`, `schedule_interval`, `default_args`, `retries`, `retry_delay` |
+| Operators         | PythonOperator, BashOperator        | Used to define task behavior via `python_callable` or `bash_command`                  |
+| Task Dependencies | Setting task order                  | Using bitshift operators (`>>`, `<<`) to link tasks                                   |
+| DAG Execution     | Manual testing                      | `airflow tasks test <dag_id> <task_id> <execution_date>`                              |
 
 ---
 
